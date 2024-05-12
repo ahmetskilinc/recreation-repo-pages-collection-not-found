@@ -23,15 +23,11 @@
 		],
 		"paths": {
 			"@/*": ["./src/*"],
-			"@/providers/*": ["./src/_providers/*"],
-			"@/components/*": ["./src/_components/*"],
-			"@/lib/*": ["./src/_lib/*"],
+			"@/access/*": ["./src/payload/_access/*"],
 			"@/collections/*": ["./src/payload/_collections/*"],
 			"@/fields/*": ["./src/payload/_fields/*"],
 			"@/utilities/*": ["./src/payload/_utilities/*"],
 			"@/views/*": ["./src/payload/_views/*"],
-			"@/access/*": ["./src/payload/_access/*"],
-			"@/globals/*": ["./src/payload/_globals/*"],
 			"@payload-config": ["./src/payload.config.ts"],
 			"@payload-types": ["./src/payload-types.ts"]
 		}
