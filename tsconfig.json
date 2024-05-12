@@ -1,0 +1,48 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"target": "es2022",
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"isolatedModules": true,
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"checkJs": false,
+		"lib": ["dom", "dom.iterable", "ES2022"],
+		"noEmit": true,
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"incremental": true,
+		"jsx": "preserve",
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"paths": {
+			"@/*": ["./src/*"],
+			"@/providers/*": ["./src/_providers/*"],
+			"@/components/*": ["./src/_components/*"],
+			"@/lib/*": ["./src/_lib/*"],
+			"@/collections/*": ["./src/payload/_collections/*"],
+			"@/fields/*": ["./src/payload/_fields/*"],
+			"@/utilities/*": ["./src/payload/_utilities/*"],
+			"@/views/*": ["./src/payload/_views/*"],
+			"@/access/*": ["./src/payload/_access/*"],
+			"@/globals/*": ["./src/payload/_globals/*"],
+			"@payload-config": ["./src/payload.config.ts"],
+			"@payload-types": ["./src/payload-types.ts"]
+		}
+	},
+	"include": [
+		"next-env.d.ts",
+		"./vanta.d.ts",
+		".next/types/**/*.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.jsx"
+	],
+	"exclude": ["node_modules"]
+}
