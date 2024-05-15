@@ -12,12 +12,12 @@ const dirname = path.dirname(filename);
 
 export default buildConfig({
 	editor: lexicalEditor(),
-	secret: process.env.PAYLOAD_SECRET || "",
+	secret: process.env.PAYLOAD_SECRET!,
 	typescript: {
 		outputFile: path.resolve(dirname, "payload-types.ts"),
 	},
 	db: mongooseAdapter({
-		url: process.env.MONGODB_URI || "",
+		url: process.env.MONGODB_URI!,
 	}),
 	collections: [Users, Pages],
 	sharp,
