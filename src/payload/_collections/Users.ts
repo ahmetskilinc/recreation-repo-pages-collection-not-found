@@ -45,11 +45,6 @@ const Users: CollectionConfig = {
 			],
 		},
 		{
-			name: "photo",
-			type: "upload",
-			relationTo: "media",
-		},
-		{
 			name: "roles",
 			type: "select",
 			hasMany: true,

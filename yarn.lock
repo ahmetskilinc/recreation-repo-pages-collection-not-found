@@ -1302,6 +1302,18 @@
     pluralize "8.0.0"
     ts-essentials "7.0.3"
 
+"@payloadcms/live-preview-react@^3.0.0-beta.32":
+  version "3.0.0-beta.32"
+  resolved "https://registry.yarnpkg.com/@payloadcms/live-preview-react/-/live-preview-react-3.0.0-beta.32.tgz#ff1d64f9bdf87df2c22ae9e730bc307a01284b84"
+  integrity sha512-6BupNWaeq6g/1QguBXVFzDjiKrukatE6qwJt3guk0dRmhe97yULGI9G64EfX6+/P0tZY9FlBm4mISg/p9WRpdA==
+  dependencies:
+    "@payloadcms/live-preview" "3.0.0-beta.32"
+
+"@payloadcms/live-preview@3.0.0-beta.32":
+  version "3.0.0-beta.32"
+  resolved "https://registry.yarnpkg.com/@payloadcms/live-preview/-/live-preview-3.0.0-beta.32.tgz#97ac8e4734f15590c2fd3cbcc3aae61926c6c9d5"
+  integrity sha512-ssTiC1enk5L3sBrBovhnIKIBNIhjnHzbn8RgboZwgVC4FRQ/S9TJnIbIZuwGx9b+gCmPvyr5ZZdhHbCAR11Dcg==
+
 "@payloadcms/next@3.0.0-beta.30":
   version "3.0.0-beta.30"
   resolved "https://registry.yarnpkg.com/@payloadcms/next/-/next-3.0.0-beta.30.tgz#bae16b7c05e2b01e6c4309dbdb4fc29f0020bed4"
@@ -2021,6 +2033,11 @@
   integrity sha512-kG7WrUuAKK0NoyxfQHsVE6j1m01s6kMma64E+OZenQABMQyTJop1DumUWcLwAQ2JzpefU7PDYoRDKl8uZosFjw==
   dependencies:
     "@types/node" "*"
+
+"@types/escape-html@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@types/escape-html/-/escape-html-1.0.4.tgz#dc7c166b76c7b03b27e32f80edf01d91eb5d9af2"
+  integrity sha512-qZ72SFTgUAZ5a7Tj6kf2SHLetiH5S6f8G5frB2SPQ3EyF02kxdyBFf4Tz4banE3xCgGnKgWLt//a6VuYHKYJTg==
 
 "@types/glob@^7.1.3":
   version "7.2.0"
@@ -5194,6 +5211,7 @@ streamsearch@^1.1.0:
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -5219,6 +5237,7 @@ string_decoder@^1.1.1, string_decoder@^1.3.0:
     safe-buffer "~5.2.0"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==

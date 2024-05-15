@@ -37,18 +37,7 @@ export default lexicalEditor({
 			},
 		}),
 		BlocksFeature({
-			blocks: [
-				// Carousel as unknown as LexicalBlock,
-				// ImageSlider as unknown as LexicalBlock,
-				// ServicesGrid as unknown as LexicalBlock,
-				// SimplePageHeading as unknown as LexicalBlock,
-				// TextBlock as unknown as LexicalBlock,
-				// FormBlock as unknown as LexicalBlock,
-				// WhereToFindUs as unknown as LexicalBlock,
-				// GoogleReviews as unknown as LexicalBlock,
-				// ProductCategories as unknown as LexicalBlock,
-				// HeroCarousel as unknown as LexicalBlock,
-			],
+			blocks: [],
 		}),
 	],
 });

@@ -1,8 +1,6 @@
 import { isAdmin } from "@/access/isAdmin";
 import { publishedOnly } from "@/access/publishedOnly";
 import content from "@/fields/content";
-import { fullTitle } from "@/fields/fullTitle";
-import { hero } from "@/fields/hero";
 import { slugField } from "@/fields/slug";
 import { CollectionConfig } from "payload/types";
 
@@ -23,23 +21,19 @@ const Pages: CollectionConfig = {
 		drafts: true,
 	},
 	admin: {
-		useAsTitle: "fullTitle",
-		defaultColumns: ["fullTitle", "slug", "createdAt", "updatedAt"],
-		// TODO: CUSTOM TABS
-		// components: {
-		// 	views: {
-		// 		Edit: {
-		// 			Test: {
-		// 				Component: Test,
-		// 				path: "/test",
-		// 				Tab: {
-		// 					label: "Test",
-		// 					href: "/test",
-		// 				},
-		// 			},
-		// 		},
-		// 	},
-		// },
+		useAsTitle: "sllug",
+		defaultColumns: ["slug", "createdAt", "updatedAt"],
+		livePreview: {
+			breakpoints: [
+				{
+					name: "mobile",
+					height: 764,
+					label: "Mobile",
+					width: 430,
+				},
+			],
+			url: ({ data }) => `${process.env.PAYLOAD_PUBLIC_SERVER_URL}/${data.slug}`,
+		},
 	},
 
 	timestamps: true,
@@ -48,27 +42,11 @@ const Pages: CollectionConfig = {
 			type: "tabs",
 			tabs: [
 				{
-					label: "General",
-					fields: [
-						{
-							name: "title",
-							type: "text",
-							required: true,
-						},
-						slugField(),
-					],
-				},
-				{
-					label: "Hero",
-					fields: [hero],
-				},
-				{
 					label: "Content",
-					fields: [content],
+					fields: [slugField(), content],
 				},
 			],
 		},
-		fullTitle,
 	],
 };
 
