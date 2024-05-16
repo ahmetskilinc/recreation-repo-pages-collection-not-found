@@ -1,10 +1,8 @@
 "use client";
 
-import Lexical from "@/components/Lexical";
 import { Page } from "@/payload-types";
 import { Fragment } from "react";
 import { useLivePreview } from "@payloadcms/live-preview-react";
-import { cn } from "@/lib/cn";
 
 type Props = {
 	page: Page;
@@ -17,13 +15,9 @@ const ClientPage = ({ page }: Props) => {
 		initialData: page,
 	});
 	return (
-		<Fragment>
-			<section className={cn("max-w-7xl mx-auto")}>
-				<div className="p-6 xs:p-8 md:p-12 md:pt-0">
-					<Lexical content={data.content} />
-				</div>
-			</section>
-		</Fragment>
+		<div>
+			<h1 dangerouslySetInnerHTML={{ __html: data.content ? data.content : "" }} />
+		</div>
 	);
 };
 

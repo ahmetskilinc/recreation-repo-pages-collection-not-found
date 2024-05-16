@@ -1,6 +1,5 @@
 import { isAdmin } from "@/access/isAdmin";
 import { publishedOnly } from "@/access/publishedOnly";
-import content from "@/fields/content";
 import { slugField } from "@/fields/slug";
 import { CollectionConfig } from "payload/types";
 
@@ -16,9 +15,6 @@ const Pages: CollectionConfig = {
 		readVersions: isAdmin,
 		update: isAdmin,
 		delete: isAdmin,
-	},
-	versions: {
-		drafts: true,
 	},
 	admin: {
 		useAsTitle: "sllug",
@@ -43,7 +39,13 @@ const Pages: CollectionConfig = {
 			tabs: [
 				{
 					label: "Content",
-					fields: [slugField(), content],
+					fields: [
+						slugField(),
+						{
+							type: "text",
+							name: "content",
+						},
+					],
 				},
 			],
 		},
